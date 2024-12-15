@@ -1,0 +1,350 @@
+
+➤ Single-Threaded Execution:
+ - JavaScript is single-threaded, which means it can only execute one task at a time. This is managed by the call stack, where functions are executed one by one.
+
+➤ Call Stack:
+ - Think of the call stack as a stack of plates. Every time a function is called, a new plate (function) is added to the stack. When the function finishes, the plate is removed from the stack.
+
+➤ Web APIs:
+ - For asynchronous operations like `setTimeout`, DOM events, and HTTP requests, JavaScript relies on Web APIs provided by the browser. These operations are handled outside of the call stack.
+
+➤ Callback Queue:
+ - When an asynchronous operation completes, its callback is placed in the callback queue. This queue waits until the call stack is clear before pushing the next callback onto the stack.
+
+➤ Event Loop:
+ - The event loop is like a manager that constantly checks if the call stack is empty. When it is, the event loop takes the first callback from the callback queue and adds it to the call stack.
+
+➤ Microtasks Queue:
+ - There's also a microtasks queue for tasks like promises. This queue has higher priority than the callback queue. The event loop checks the microtasks queue first, ensuring these tasks are processed before other callbacks.
+
+➤ Priority Handling:
+ - To sum it up, the event loop first checks the microtasks queue. If it's empty, it moves to the callback queue. This ensures that critical tasks, like promises, are handled promptly.
+
+That’s the JavaScript Event Loop.
+
+Time’s up!
+
+
+𝟏.𝐂𝐨𝐦𝐩𝐨𝐧𝐞𝐧𝐭𝐬
+• Functional Components
+• Class Components
+• JSX (JavaScript XML) Syntax
+
+𝟐.𝐏𝐫𝐨𝐩𝐬 (𝐏𝐫𝐨𝐩𝐞𝐫𝐭𝐢𝐞𝐬)
+• Passing Props
+• Default Props
+• Prop Types
+
+𝟑.𝐒𝐭𝐚𝐭𝐞
+• useState Hook
+• Class Component State
+• Immutable State
+
+𝟒.𝐋𝐢𝐟𝐞𝐜𝐲𝐜𝐥𝐞 𝐌𝐞𝐭𝐡𝐨𝐝𝐬 (𝐂𝐥𝐚𝐬𝐬 𝐂𝐨𝐦𝐩𝐨𝐧𝐞𝐧𝐭𝐬)
+• componentDidMount
+• componentDidUpdate
+• componentWillUnmount
+
+𝟓.𝐇𝐨𝐨𝐤𝐬 (𝐅𝐮𝐧𝐜𝐭𝐢𝐨𝐧𝐚𝐥 𝐂𝐨𝐦𝐩𝐨𝐧𝐞𝐧𝐭𝐬)
+• useState
+• useEffect
+• useContext
+• useReducer
+• useCallback
+• useMemo
+• useRef
+• useImperativeHandle
+• useLayoutEffect
+
+𝟔.𝐄𝐯𝐞𝐧𝐭 𝐇𝐚𝐧𝐝𝐥𝐢𝐧𝐠
+• Handling Events in Functional Components
+• Handling Events in Class Components
+
+𝟕.𝐂𝐨𝐧𝐝𝐢𝐭𝐢𝐨𝐧𝐚𝐥 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠
+• if Statements
+• Ternary Operators
+• Logical && Operator
+
+𝟖.𝐋𝐢𝐬𝐭𝐬 𝐚𝐧𝐝 𝐊𝐞𝐲𝐬
+• Rendering Lists
+• Keys in React Lists
+
+𝟗.𝐂𝐨𝐦𝐩𝐨𝐧𝐞𝐧𝐭 𝐂𝐨𝐦𝐩𝐨𝐬𝐢𝐭𝐢𝐨𝐧
+• Reusing Components
+• Children Props
+• Composition vs Inheritance
+
+𝟏𝟎.𝐇𝐢𝐠𝐡𝐞𝐫-𝐎𝐫𝐝𝐞𝐫 𝐂𝐨𝐦𝐩𝐨𝐧𝐞𝐧𝐭𝐬 (𝐇𝐎𝐂)
+• Creating HOCs
+• Using HOCs for Reusability
+
+𝟏𝟏.𝐑𝐞𝐧𝐝𝐞𝐫 𝐏𝐫𝐨𝐩𝐬
+• Using Render Props Pattern
+
+𝟏𝟐.𝐑𝐞𝐚𝐜𝐭 𝐑𝐨𝐮𝐭𝐞𝐫
+• <BrowserRouter>
+• <Route>
+• <Link>
+• <Switch>
+• Route Parameters
+
+𝟏𝟑.𝐍𝐚𝐯𝐢𝐠𝐚𝐭𝐢𝐨𝐧
+• useHistory Hook
+• useLocation Hook
+
+𝐒𝐭𝐚𝐭𝐞 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭
+
+𝟏𝟒.𝐂𝐨𝐧𝐭𝐞𝐱𝐭 𝐀𝐏𝐈
+• Creating Context
+• useContext Hook
+
+𝟏𝟓.𝐑𝐞𝐝𝐮𝐱
+• Actions
+• Reducers
+• Store
+• connect Function (React-Redux)
+
+𝟏𝟔.𝐅𝐨𝐫𝐦𝐬
+• Handling Form Data
+• Controlled Components
+• Uncontrolled Components
+
+𝟏𝟕.𝐒𝐢𝐝𝐞 𝐄𝐟𝐟𝐞𝐜𝐭𝐬
+• useEffect for Data Fetching
+• useEffect Cleanup
+
+𝟏𝟖.𝐀𝐉𝐀𝐗 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐬
+• Fetch API
+• Axios Library
+
+𝐄𝐫𝐫𝐨𝐫 𝐇𝐚𝐧𝐝𝐥𝐢𝐧𝐠
+
+𝟏𝟗.𝐄𝐫𝐫𝐨𝐫 𝐁𝐨𝐮𝐧𝐝𝐚𝐫𝐢𝐞𝐬
+• componentDidCatch (Class Components)
+• ErrorBoundary Component (Functional
+Components)
+
+𝟐𝟎.𝐓𝐞𝐬𝐭𝐢𝐧𝐠
+• Jest Testing Framework
+• React Testing Library
+
+𝟐𝟏.𝐎𝐩𝐭𝐢𝐦𝐢𝐳𝐚𝐭𝐢𝐨𝐧
+• Memoization
+• Profiling and Performance Monitoring
+
+𝟐𝟐. 𝐁𝐮𝐢𝐥𝐝 𝐚𝐧𝐝 𝐃𝐞𝐩𝐥𝐨𝐲𝐦𝐞𝐧𝐭
+• Create React App (CRA)
+• Production Builds
+• Deployment Strategies
+
+𝐅𝐫𝐚𝐦𝐞𝐰𝐨𝐫𝐤𝐬 𝐚𝐧𝐝 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬
+
+𝟐𝟑.𝐒𝐭𝐲𝐥𝐢𝐧𝐠 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬
+• Styled-components
+• CSS Modules
+
+𝟐𝟒.𝐒𝐭𝐚𝐭𝐞 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬
+• Redux
+• MobX
+
+𝟐𝟔.𝐑𝐨𝐮𝐭𝐢𝐧𝐠 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬
+• React Router
+• Reach Router
+
+
+1. What is React?
+2. What is the history behind React evolution?
+3. What are the major features of React?
+4. What is JSX?
+5. What is the difference between Element and Component?
+6. How to create components in React?
+7. When to use a Class Component over a Function Component?
+8. What are Pure Components?
+9. What is state in React?
+10. What are props in React?
+11. What is the difference between state and props?
+12. What is the difference between HTML and React event handling?
+13. What are synthetic events in React?
+14. What are inline conditional expressions?
+15. What is "key" prop and what is the benefit of using it in arrays of elements?
+16. What is Virtual DOM?
+17. How Virtual DOM works?
+18. What is the difference between Shadow DOM and Virtual DOM?
+19. What is React Fiber?
+20. What is the main goal of React Fiber?
+21. What are controlled components?
+22. What are uncontrolled components?
+23. What is the difference between createElement and cloneElement?
+24. What is Lifting State Up in React?
+25. What are Higher-Order Components?
+26. What is children prop?
+1. What is React?
+2. What are components in React?
+3. What is JSX?
+4. What is the virtual DOM?
+5. What are props?
+6. What is state in React?
+7. How do you handle events in React?
+8. What are hooks in React?
+9. What is the purpose of `useEffect`?
+10. What is context in React?
+11. How do you manage state in large applications?
+12. What are higher-order components (HOCs)?
+13. What are render props?
+14. What is code splitting?
+15. How can you optimize performance in a React app?
+16. What are some common performance issues in React?
+17. How do you handle forms in React?
+18. What is the difference between controlled and uncontrolled components?
+19. How do you test React components?
+20. What are some common debugging techniques in React?
+21. What are error boundaries?
+22. How do you implement routing in a React app?
+23. What is the significance of keys in lists?
+24. How do you perform API calls in React?
+25. What are some lifecycle methods in React?
+1. What is React?
+ 2. What is useMemo ?
+ 3. What are the features of React ?
+ 4. What is JSX ?
+ 5. What is DOM ?
+ 6. What is Virtual Dom ?
+ 7. What is component life cycle of React class component ?
+ 8. What are fragments in react ?
+ 9. What are props in react ?
+ 10. What are synthetic events in react ?
+ 11. What are the difference between Package.json and Package.lock.json ?
+ 12. What are the differences between client side and server side rendering ?
+ 13. What is state in Reactjs?
+ 14. What are props ?
+ 15. What are the differences between State and Props in react ?
+ 16. What is props drilling ?
+ 17. What are the disadvantages of props drilling and How we can avoid props drilling ?
+ 18. What are Pure components in React ?
+ 19. Whatare Ref’s in React?
+ 20. What is meant by forward ref ?
+ 21. What are Error boundaries ?
+ 22. What are Higher order components in react ?
+ 23. What are the differences between controlled and uncontrolled components ? 
+ 24. What is useCallback ?
+ 25. What are the differences between useMemo and useCallback ?
+ 26. What are keys in React ?
+ 27. What is Lazy loading in React ?
+ 28. What is suspense in React ?
+ 29. What are custom hooks ?
+ 30. What is useReducer hook ?
+
+
+𝟭-𝟭𝟬: 𝗕𝗮𝘀𝗶𝗰𝘀 𝗼𝗳 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁
+
+1. What is JavaScript?
+2. Explain the difference between let, const, and var.
+3. How does hoisting work in JavaScript?
+4. Describe the concept of closures.
+5. Explain the event loop in JavaScript.
+6. What is the difference between == and ===?
+7. How do you check the type of a variable in JavaScript?
+8. What is the use of the this keyword in JavaScript?
+9. Explain the difference between function declaration and function expression.
+10. How does the setTimeout function work?
+
+𝟭𝟭-𝟮𝟬: 𝗙𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝘀 𝗮𝗻𝗱 𝗦𝗰𝗼𝗽𝗲
+
+11. What is a callback function?
+12. Explain the concept of a pure function.
+13. Describe the differences between function.call, function.apply, and function.bind.
+14. What is the purpose of the arguments object in a function?
+15. How do you create a closure in JavaScript?
+16. What is the use of the bind method?
+17. What is the difference between a shallow copy and a deep copy?
+18. How does the call stack work in JavaScript?
+19. Explain the concept of function currying.
+20. How can you avoid callback hell in JavaScript?
+
+𝟮𝟭-𝟯𝟬: 𝗢𝗯𝗷𝗲𝗰𝘁𝘀 𝗮𝗻𝗱 𝗣𝗿𝗼𝘁𝗼𝘁𝘆𝗽𝗲𝘀
+
+21. What is prototypal inheritance?
+22. How do you create an object in JavaScript?
+23. What is the purpose of the prototype property in JavaScript?
+24. Explain the difference between Object.create and the constructor pattern.
+25. How do you add a property to an object in JavaScript?
+26. What is the hasOwnProperty method used for?
+27. How can you prevent modification of object properties in JavaScript?
+28. Describe the use of the new keyword.
+29. Explain the concept of Object Destructuring in JavaScript.
+30. What is the difference between null and undefined?
+
+𝟯𝟭-𝟰𝟬: 𝗗𝗢𝗠 𝗠𝗮𝗻𝗶𝗽𝘂𝗹𝗮𝘁𝗶𝗼𝗻 𝗮𝗻𝗱 𝗘𝘃𝗲𝗻𝘁𝘀
+
+31. What is the DOM?
+32. How do you select elements with Vanilla JavaScript?
+33. Explain event delegation in JavaScript.
+34. What is the purpose of the addEventListener method?
+35. How do you create and remove elements in the DOM?
+36. Explain the concept of event propagation.
+37. How can you prevent the default behaviour of an event?
+38. What is the purpose of the data- attribute in HTML?
+39. Describe the difference between innerHTML and textContent.
+40. How do you handle asynchronous code in JavaScript?
+
+1. What are the differences between var, let, and const?
+2. What is hoisting in JavaScript?
+3. Explain the difference between null and undefined.
+4. What is a closure in JavaScript?
+5. What are JavaScript data types?
+6. What is the difference between == and === in JavaScript?
+7. What is the purpose of the this keyword?
+8. What are arrow functions and how are they different from regular functions?
+9. What are template literals in JavaScript?
+10. What is the event loop in JavaScript?
+11. Explain the concept of callback functions.
+12. What is a promise in JavaScript?
+13. What is asynchronous programming, and how is it handled in JavaScript?
+14. What is the purpose of the bind(), call(), and apply() methods?
+15. What are JavaScript modules?
+16. What is the difference between let and const when declaring variables in a loop?
+17. What is a higher-order function in JavaScript?
+18. Explain how setTimeout and setInterval work.
+19. What is the prototype chain in JavaScript?
+20. How can you clone an object in JavaScript?
+21. What is destructuring in JavaScript?
+22. What are the various methods to create an object in JavaScript?
+23. What is the difference between slice() and splice()?
+24. Explain the concept of event delegation in JavaScript.
+25. What is the difference between synchronous and asynchronous code in JavaScript?
+26. What is the apply() method, and how is it used in JavaScript?
+27. What are generators and how are they used in JavaScript?
+28. What is the purpose of the Proxy object in JavaScript?
+29. Explain the concept of currying in JavaScript.
+30. What is the difference between localStorage and sessionStorage?
+
+1. What is JavaScript?
+2. What are the data types supported by JavaScript?
+3. What is the difference between `let`, `const`, and `var`?
+4. Explain how `==` and `===` differ.
+5. What is a closure?
+6. What is hoisting?
+7. Explain the concept of "this" in JavaScript.
+8. What are JavaScript prototypes?
+9. What is the difference between `null` and `undefined`?
+10. How does JavaScript handle asynchronous operations?
+11. What is a promise?
+12. What are async/await functions?
+13. Explain event delegation in JavaScript.
+14. What are JavaScript modules?
+15. How can you prevent a function from being called multiple times?
+16. What is the event loop?
+17. What is the difference between `apply()` and `call()` methods?
+18. What is `bind()` method used for?
+19. What is a JavaScript event loop?
+20. Explain the concept of "event bubbling" and "event capturing".
+21. What is the difference between `deep copy` and `shallow copy`?
+22. What are generator functions?
+23. What is the `new` keyword used for?
+24. How do JavaScript’s `setTimeout` and `setInterval` work?
+25. What is a `WeakMap` and how is it different from a `Map`?
+26. What is a `Set` in JavaScript?
+27. What is `Object.create()` used for?
+28. How does JavaScript’s garbage collection work?
+29. What are "decorators" in JavaScript?
+30. Explain the difference between `prototype` and `__proto__`.

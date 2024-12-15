@@ -1,5 +1,1 @@
- let res = words
-  //     .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-  //     .join("");
-
-  //   console.log(res);
+// check palindrome
